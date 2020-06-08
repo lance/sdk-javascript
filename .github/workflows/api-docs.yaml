@@ -20,5 +20,6 @@ jobs:
           target_branch: gh-pages
           build_dir: docs
           commit_message: "Signed-off-by: Lance Ball <lball@redhat.com>"
+          allow_empty_commit: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
