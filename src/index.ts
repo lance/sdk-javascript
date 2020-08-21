@@ -5,7 +5,7 @@ import { CloudEventV03, CloudEventV03Attributes, CloudEventV1, CloudEventV1Attri
 import { Emitter, TransportOptions } from "./transport/emitter";
 import { Receiver, Mode } from "./transport/receiver";
 import { Protocol } from "./transport/protocols";
-import { Headers, headersFor } from "./transport/http/headers";
+import { Headers } from "./messages";
 
 import CONSTANTS from "./constants";
 
@@ -25,7 +25,6 @@ export {
   Protocol,
   TransportOptions,
   Headers,
-  headersFor,
   // From Constants
   CONSTANTS,
 };

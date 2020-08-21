@@ -1,4 +1,5 @@
-import { Headers, sanitize } from "./http/headers";
+import { Headers } from "../messages";
+import { sanitize } from "../messages/http/headers";
 import { CloudEvent, Version, ValidationError } from "..";
 import { BinaryHTTPReceiver as BinaryReceiver } from "./http/binary_receiver";
 import { StructuredHTTPReceiver as StructuredReceiver } from "./http/structured_receiver";

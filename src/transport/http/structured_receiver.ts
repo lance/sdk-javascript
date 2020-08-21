@@ -1,5 +1,6 @@
 import { CloudEvent, Version } from "../..";
-import { Headers, sanitize } from "./headers";
+import { Headers } from "../../messages";
+import { sanitize } from "../../messages/http/headers";
 import { Parser, JSONParser, MappedParser, Base64Parser } from "../../parsers";
 import { parserByContentType } from "../../parsers";
 import { v1structuredParsers, v03structuredParsers } from "./versions";

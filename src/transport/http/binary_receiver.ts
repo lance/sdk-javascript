@@ -1,8 +1,8 @@
 import { CloudEvent, Version } from "../..";
 import { CloudEventV1, CloudEventV03 } from "../../event/interfaces";
 import { validateCloudEvent } from "../../event/spec";
-import { Headers, validate } from "./headers";
-import { v03binaryParsers, v1binaryParsers } from "./versions";
+import { Headers } from "../../messages";
+import { validate, v03binaryParsers, v1binaryParsers } from "../../messages/http/headers";
 import { parserByContentType, MappedParser } from "../../parsers";
 import { isString, isBase64, ValidationError, isStringOrObjectOrThrow } from "../../event/validation";
 import CONSTANTS from "../../constants";
